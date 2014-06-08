@@ -9,6 +9,6 @@ dat3$datetime<-strptime(paste(dat3$Date,dat3$Time),"%Y-%m-%d %H:%M:%S")
 dat3$Global_active_power<-as.numeric(as.character(dat3$Global_active_power))
 ## plot of Global Active Power by Days
 png(filename="plot2.png",width=480,height=480)
-plot(dat3$datetime,dat3$Global_active_power,main="Plot2 - Global Active Power by Days",
-     ylab="Global Active Power(Kilowatts)",xlab="Days",type="l")
+plot(dat3$datetime,dat3$Global_active_power,
+     ylab="Global Active Power(Kilowatts)",xlab=" ",type="l")
 dev.off()

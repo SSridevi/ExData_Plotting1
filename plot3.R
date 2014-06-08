@@ -12,7 +12,7 @@ dat3$Sub_metering_2<-as.numeric(as.character(dat3$Sub_metering_2))
 dat3$Sub_metering_3<-as.numeric(as.character(dat3$Sub_metering_3))
 ## plot of Energy sub metering by Days
 png(filename="plot3.png",width=480,height=480)
-plot(dat3$datetime,dat3$Sub_metering_1,main="Plot3 - Energy Sub Metering",ylab="Energy Sub Metering",xlab="Days",type="l")
+plot(dat3$datetime,dat3$Sub_metering_1,ylab="Energy sub metering",xlab=" ",type="l")
 lines(dat3$datetime,dat3$Sub_metering_2,col="red")
 lines(dat3$datetime,dat3$Sub_metering_3,col="blue")
 legend("topright",lty=1,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
